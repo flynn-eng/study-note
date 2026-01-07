@@ -1,4 +1,3 @@
-# study-note
 s='hello world'
 print('e在s中存在吗？',('e'in s))#判断字符e是否在字符串中存在
 print('v在s中存在吗？',('v'in s))#判断字符v是否在字符串中存在

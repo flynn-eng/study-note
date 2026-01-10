@@ -1,0 +1,13 @@
+s='伟大中国梦'
+#编码，字符串转为二进制
+s1=s.encode('utf-8',errors='replace')#utf-8中文占三个字节
+print(s1)
+s2=s.encode('gbk',errors='replace')
+print(s2)#gbk中文占两个字节
+#编码中遇到错误
+s3='耶'#遇到非法的如表情耶，只会输出2个字节表示，error用ignore忽视，strict严格出现编码不了的直接报错
+s4=s3.encode('gbk',errors='ignore')
+print(s3)
+#解码
+print(bytes.decode(s1,'utf-8'))
+print(bytes.decode(s4,'gbk'))

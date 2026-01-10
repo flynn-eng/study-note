@@ -1,0 +1,9 @@
+luck_number=8#创建一个整型变量，赋值为8
+name='zyz'#字符串类型的变量
+print(type(luck_number))#内置函数type确定类型
+print(name,'的幸运数字',luck_number)
+luck_number='zyz'#python动态修改变量的数据类型
+#在python中允许多个变量指向同一个值,指的是内存中同一个块
+no=number=1024
+print(no,number)
+print(id(no),id(number))#id函数查看内存地址,整数浮点字符串类都属于不可变数据类型，即该值就存在固定id的内存块

@@ -1,0 +1,33 @@
+d={'a':1,'b':2,'c':3,'d':4,'e':5}
+print(d)
+#向字典中添加元素
+d[6]='e'#d【key】=value
+print(d)
+#获取字典中所有的key
+keys=d.keys()
+print(keys)
+print(list(keys))#转为列表
+print(tuple(keys))#转为元组
+#获取字典中所有的值value
+values=d.values()
+print(values)
+print(list(values))
+print(tuple(values))
+#如何将字典中的数据转为key-value形式，以元组的方式进行展现
+lst=list(d.items())
+print(lst)
+d=dict(lst)
+print(d)
+#使用pop函数
+print(d.pop('a'))#找到key=a，再删除对应的键值对
+print(d)
+print(d.pop(7,'not exist'))#每个这个都要输出这个默认值
+print(d.pop(8,'not exist'))
+#随机删除
+print(d.popitem())#显示随机删除了哪一个
+print(d)
+#清空字典中的所有元素
+d.clear()
+print(d)
+#python中一切皆对象，每一个都有一个布尔值
+print(bool(d))#此时d为空的

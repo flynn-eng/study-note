@@ -1,0 +1,11 @@
+x=True
+print(x)
+print(type(x))
+print(x+10)#True为1，False为0
+print(False+10)
+print('-----')
+print(bool(18))#测试bool值
+print(bool(0),bool(0.000))#非0的整数布尔值都是true
+print(bool('sadsad'))
+print(bool(''))#所有非空字符串的bool值都为true
+print(bool(None),bool(False))#0,0.0,空序列，空元组，空一类都为false

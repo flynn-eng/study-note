@@ -1,0 +1,24 @@
+#创建
+d={10:'cat',11:'dog',12:'mouse'}#当key值相等时，后面的内容会覆盖第一个的值，如11：zoo会覆盖dog,字典中的键必须是不可变数据类型
+print(d)
+#（2）
+lst2=[10,11,12]
+lst1=['cat','dog','mouse']
+zipobj=zip(lst2,lst1)
+print(zipobj)
+#print(list(zipobj))#此时为列表
+d=dict(zipobj)
+print(d)
+#(3)
+d=dict(cat=10,dog=11,mouse=12)
+print(d)
+t=(10,11,12)#元组
+print({t:10})#t是key，10是value，元组作为了键值
+lst=[10,11,12]
+#print({lst:10})#此时报错lst为可变数据类型不能作为键值
+#字典属于序列，具备len，max等功能
+print('max',max(d))
+print('min',min(d))
+print('len',len(d))
+#删除
+del d

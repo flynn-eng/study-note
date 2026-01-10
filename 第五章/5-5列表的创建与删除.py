@@ -1,0 +1,19 @@
+#直接用【】创建
+lst=['hello','world',1,2]
+print(lst)
+#使用内置函数list()创建列表
+lst2=list('helloworld')#注意不能用list命名
+lst3=list(range(1,11,2))#1到11，步长为2，不包括11
+print(lst3)
+print(lst2)
+#列表是序列，对序列的操作符，运算符，函数均可以使用
+print(lst+lst2+lst3)#序列中的相加操作
+print(lst*3)
+print(len(lst))
+print(max(lst3))#lst列表就不能比较，涉及字符串与int整数的比较
+print(min(lst3))
+print(lst2.count('o'))#统计列表2中o出现的次数
+print(lst2.index('o'))#o第一次出现的序号
+lst4=[1,2,3,4,5]
+print(lst4)
+#del lst4，print(lst4)报错此时lst4不存在

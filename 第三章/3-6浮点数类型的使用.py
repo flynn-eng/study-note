@@ -1,0 +1,10 @@
+height=187.6
+print(height)
+print(type(height))#type函数看类型
+x=10
+y=10.0
+print(type(x),type(y))
+p=1.99E13#科学计数法表示浮点类型
+print(p)
+print(0.1+0.2)#不确定尾数问题0.30000004
+print(round(0.1+0.2,1))#1代表保留一位小数

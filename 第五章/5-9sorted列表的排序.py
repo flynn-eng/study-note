@@ -1,0 +1,12 @@
+lst=[4,56,83,25]
+print(lst)
+#排序
+asc_lst=sorted(lst)#默认升序排列
+print(asc_lst)
+print(lst)
+asc_lst=sorted(lst,reverse=True)
+print(asc_lst)
+#忽略大小写进行排序
+lst2=['banana','apple','orange','Pea']
+lst3=sorted(lst2,key=str.lower)
+print(lst3)
